@@ -176,6 +176,7 @@
                         <li><a href="http://www.xiumima.com"                           target="_blank">嗅密码(社工)</a></li>
                         <li><a href="http://www.cmd5.com/"                             target="_blank">Hash在线解密</a></li>
                         <li><a href="http://git.d1studio.com:8080/WebGoat/login.mvc"   target="_blank">WebGoat</a></li>
+                        <li><a href="http://ws.d1studio.com:81/"  id="download_btn"    target="_blank">资料下载</a></li>
 
                         <!--<li class="dropdown">-->
                             <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
@@ -368,6 +369,17 @@
         })
         $('#question_3').click(function(){
             layer.msg("朕很欣慰~");
+        })
+        $('#download_btn').click(function () {
+            layer.open({
+                type: 2,
+                title: '下载页面',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['90%', '500px'],
+                content: $(this).attr('href') //iframe的url
+            });
+            return false;
         })
     })
 </script>
