@@ -177,19 +177,17 @@
                         <li><a href="http://www.cmd5.com/"                             target="_blank">Hash在线解密</a></li>
                         <li><a href="http://git.d1studio.com:8080/WebGoat/login.mvc"   target="_blank">WebGoat</a></li>
                         <li><a href="http://ws.d1studio.com:81/"  id="download_btn"    target="_blank">资料下载</a></li>
-
-                        <!--<li class="dropdown">-->
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
-                            <!--<ul class="dropdown-menu">-->
+                        <li><a href="tips.html"  id=" "    target="_blank">小贴士们</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
                                 <!--<li><a href="#">Action</a></li>-->
-                                <!--<li><a href="#">Another action</a></li>-->
                                 <!--<li><a href="#">Something else here</a></li>-->
                                 <!--<li role="separator" class="divider"></li>-->
                                 <!--<li class="dropdown-header">Nav header</li>-->
-                                <!--<li><a href="#">Separated link</a></li>-->
                                 <!--<li><a href="#">One more separated link</a></li>-->
-                            <!--</ul>-->
-                        <!--</li>-->
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -223,10 +221,13 @@
             <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>每日小贴士 第一期 ~</h1>
-                    <p>什么是平行权限?</p>
-                    <p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;平行权限,就是我可以操作别人的信息,常见原因就是程序猿木有吧程序写的很健壮,平行权限危害很大,如果电商的用户收获地址,有平行权限漏洞,那么就会有很严重的信息系泄漏(姓名,手机,家庭住址) <a href="http://www.wooyun.org/bugs/wooyun-2013-023944" target="_blank">实例</a></p>
-                    <p><a class="btn btn-lg btn-primary" style="cursor: pointer" id="question_3" >帮到我了?</a></p>
+                    <h1>每日小贴士 第二期 ~</h1>
+                    <p style="text-align: center"><img id="show_big" style="width: 100px;height: 100px;cursor: pointer" src="http://www.cz88.net/images/2013/8/161256094062.jpg" class="img-thumbnail" /></p>
+                    <p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;如上图,正所谓,珍爱生命远离IE,防止心脑血管疾病(太慢了,容易血压高),那么问题来了,我们用啥啊?A.360安全浏览器 B.Chrome C.Firefox ..... <br/>&nbsp;&nbsp;&nbsp;&nbsp;但是作为一个未来的知名黑阔,当然不能用一般人用的浏览器喽~:<a href="http://jaist.dl.sourceforge.net/project/getmantra/Mantra%20Security%20Toolkit/Janus%20-%200.92%20Beta/OWASP%20Mantra%20Janus.exe">Mantra</a></p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" style="cursor: pointer" id="question_4" >我要换~</a>
+                        <a class="btn btn-lg btn-primary" style="cursor: pointer" href="tips.html#tip2" >更多说明</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -370,6 +371,9 @@
         $('#question_3').click(function(){
             layer.msg("朕很欣慰~");
         })
+        $('#question_4').click(function(){
+            layer.msg("恭喜你~做了睿智的选择~");
+        })
         $('#download_btn').click(function () {
             layer.open({
                 type: 2,
@@ -381,6 +385,19 @@
             });
             return false;
         })
+        $('#show_big').click(function () {
+            layer.open({
+                type: 1,
+                title: false,
+                closeBtn: false,
+                shadeClose: true,
+                skin: 'yourclass',
+                content: '<img style="width: 400px;height: 400px;" src="http://www.cz88.net/images/2013/8/161256094062.jpg" class="img-thumbnail" />'
+            });
+            return false;
+        })
+
+
     })
 </script>
 </body>
