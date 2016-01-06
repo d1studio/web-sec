@@ -208,42 +208,20 @@
         <!--<li data-target="#myCarousel" data-slide-to="2" class=""></li>-->
     </ol>
     <div class="carousel-inner" role="listbox">
-        <!--<div class="item ">-->
-            <!--<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">-->
-            <!--<div class="container">-->
-                <!--<div class="carousel-caption">-->
-                    <!--<h1>这都不是事儿~</h1>-->
-                    <!--<p>对世界上的一切学问与知识的掌握也并非难事，只要持之以恒地学习，努力掌握规律，达到熟悉的境地，就能融会贯通，运用自如了。 —— 高士其-->
-                    <!--</p>-->
-                    <!--<p><a class="btn btn-lg btn-primary" style="cursor: pointer" id="question_1" >你说是不?</a></p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
         <div class="item active">
             <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>每日小贴士 第5期 ~</h1>
-                    <p style="text-align: center">linux入侵提权(服务器提权)方法</p>
-                    <p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.3lian.com/edu/2013/08-14/89373.html">上链接吧~</a></p>
-                    <p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;EXP,就在这里,在这里,这里--> <a href="https://github.com/PenturaLabs/Linux_Exploit_Suggester">里</a></p>
+                    <h1>每日小贴士 第6期 ~</h1>
+                    <p style="text-align: center">在你不知不觉中,其实你犯罪了~</p>
+                    <p style="text-align: left"><a target="_blank" href="http://baike.baidu.com/link?url=Gs_YlxXZ3qrcfqweE8h00DuWoxwjG3S71wjUedKI4CB9YO7arwfKPGQ-8nEiHZWQzGeEkN9pt202q40hVKwJYK">非法侵入计算机信息系统罪 这里有说明~~</a></p>
+                    <p style="text-align: left">赶紧上代理吧~<a href="http://www.xicidaili.com/" target="_blank">这里有免费代理哟~</a></p>
                     <p>
-                        <a class="btn btn-lg btn-primary" style="cursor: pointer" target="_blank" href="http://ws.d1studio.com:83/" >试试~</a>
+                        <a class="btn btn-lg btn-primary" id="q1" >你知道了吗(点这里,点这里,点这里)?</a>
                     </p>
                 </div>
             </div>
         </div>
-        <!--<div class="item ">-->
-            <!--<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">-->
-            <!--<div class="container">-->
-                <!--<div class="carousel-caption">-->
-                    <!--<h1>就这么学~</h1>-->
-                    <!--<p>我们一定要给自己提出这样的任务：第一，学习，第二是学习，第三还是学习。—— 列宁</p>-->
-                    <!--<p><a class="btn btn-lg btn-primary" style="cursor: pointer" id="question_2" >是这样吧?</a></p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -290,13 +268,13 @@
 <script src="js/layer/layer.js"></script>
 <script>
     $(function(){
-        $('#question_1,#question_2').click(function(){
-            layer.confirm('你说是吧？', {
-                btn: ['是','是'] //按钮
+        $('#q1,#question_2').click(function(){
+            layer.confirm('你还犯罪吗?？', {
+                btn: ['硬','软'] //按钮
             }, function(){
-                layer.msg('这就对啦~', {icon: 1});
+                layer.msg('那就赶紧用代理呀~ >_<#', {icon: 1});
             }, function(){
-                layer.msg('这就对啦~', {icon: 1});
+                layer.msg('求去你用代理吧~ ~^o^~', {icon: 1});
             });
         })
         $('#question_3').click(function(){
